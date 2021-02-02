@@ -1,0 +1,39 @@
+<infos>
+   <Info sr="1">
+     <Id>1</Id>
+     <Name>John Doe</Name>
+     <Depertment>Sales</Depertment>
+     <Address>
+     <Flat></Flat>
+     <house>H# 38</house>
+     <Road>R#3</Road>
+     <Area>Banani</Area>
+     <city>Dhaka</city>
+     </Address>
+  </Info>
+  <Info sr="2">
+     <Id>2</Id>
+     <Name>Mark Zuckerberg </Name>
+     <Depertment>Accounts</Depertment>
+     <Address>
+     <Flat>Flat# A/1</Flat>
+     <house>H# 20</house>
+     <Road>R#18</Road>
+     <Area>Mirpur</Area>
+     <city>Dhaka</city>
+    </Address>
+  </Info>
+  <Info sr="3">
+     <Id>3</Id>
+     <Name>Jhon Cart</Name>
+     <Depertment>Human Resouce</Depertment>
+     <Address>
+     <Flat></Flat>
+     <house>H# 38</house>
+     <Road>R#3</Road>
+     <Area>Motijheel</Area>
+     <city></city>
+     </Address>
+  </Info>
+    
+</infos>
