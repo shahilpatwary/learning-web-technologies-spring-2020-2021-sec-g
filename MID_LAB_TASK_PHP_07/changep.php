@@ -10,9 +10,10 @@ if(isset($_SESSION['flag'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page2</title>
+    <title>CHANGE PICTURE</title>
 </head>
 <body>
+
     <table border="1" width="100%" align="center"'>
         <tr>
             <td colspan="3" height="80px" align="left">
@@ -25,6 +26,8 @@ if(isset($_SESSION['flag'])){
                 </h3>
             </td>                        
         </tr>
+
+
     <table border="1" width="100%" align="center">
         <tr align="left" height="300px">
             <td width="200px">
@@ -40,38 +43,37 @@ if(isset($_SESSION['flag'])){
                 </ul>      
             </p>
             </td>
-            <td align="center" >
-                <fieldset style="width:70%">
-                <legend>PROFILE </legend>
-                <table>
-                    <tr>
-                        <td>Name<br></td>
-                        <td>:<?php echo $user['username']; ?></td>
-                        <td rowspan="3" ><img src="user.png" width="100" height="100"></td>
-                        <tr>
-                            <td>Email<br></td>
-                                <td>:<?php echo $user['email']; ?></td>
-                            </tr>    
+            <td align="left" height="200px" >
+                <form method="POST" action="#" >
+                    <fieldset>
+                        <legend>CHANGE PASSWORD</legend>
+                            <table height="180px">
+    
+                                <td>Current Password:</td>
+                                <td><input type="text" name="pass_cur" value="" /> </td>
                             <tr>
-                                <td>Gender<br></td>
-                                <td>:<?php echo $user['gender']; ?></td>
+                                <td> New Password :</td>
+                                <td><input type="name" name="pass_new"  value=""> <br> </td>
+    
                             </tr>
+                            
                             <tr>
-                                <td>Dob<br></td>
-                                <td>:<?php echo $user['dob']; ?></td>
-                                <td> <a href="user.php" >Change</a> </td>
-                             </tr>  
-                        </table>
-                        <a href="editprofile.html"> Edit Profile</a>    
+                                <td> Retype New Password :</td>
+                                <td><input type="name" name="re_pass_new"  value=""> <br> </td>
+    
+                            </tr> 
+                            </table>
+                            <input type="submit" name="submit" value="Submit">
+    
                     </fieldset>
-                <p></p>
+                </form>
             </td>
         </tr>
     </table>
+
     <table border="1" width="100%" height="50px">
         <td colspan="3"><center>Copyright@2017</center></td> 
-    </table> 
-    
+    </table>    
 </body>
 </html>
 <?php
