@@ -16,6 +16,10 @@
             if($password==$re_password)
             {
                 echo "sucess";
+                $_SESSION['username']=$username;
+                $_SESSION['password']=$password;
+                $_SESSION['re_password']=$re_password;
+                print_r($_SESSION);
             }
             else
             {
