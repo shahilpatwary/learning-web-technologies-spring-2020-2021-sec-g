@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	if(isset($_SESSION['flag'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,3 +38,8 @@
     
 </body>
 </html>
+<?php
+	}else{
+		header('location: login.html');
+	}
+?>
