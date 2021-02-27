@@ -14,7 +14,8 @@
     }
     else
     {
-        if($_SESSION['username'] == $username && $_SESSION['password'] == $password)
+        $user = $_SESSION['current_user'];
+        if($user['username'] == $username && $user['password'] == $password)
         {
           
             echo "valid user...";
